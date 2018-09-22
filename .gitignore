@@ -1,0 +1,5 @@
+*.sw*
+node_modules
+release-builds
+assets/images/Thumbs.db
+package-lock.json
