@@ -25,7 +25,7 @@ var Game = window.Game || {}; // Namespace
 
       player : {
         src       : 'assets/gfx/player.png',
-        sx        : 19.666,
+        sx        : 32,
         sy        : 32,
         ids       : ['idle'],
         animations: {
