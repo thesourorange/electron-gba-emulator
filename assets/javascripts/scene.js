@@ -145,14 +145,9 @@ var Game = window.Game || {}; // Namespace
             ((((cx * CHUNK_TILES) + (tx))) / s) / d,
             ((((cy * CHUNK_TILES) + (ty))) / s) / d,
             layer);
-      /*
-      var n = this.noise.snoise(
-            ((((cx * CHUNK_SIZE) + (tx * TILE_SIZE))) / seed) / delta,
-            ((((cy * CHUNK_SIZE) + (ty * TILE_SIZE))) / seed) / delta,
-            layer)*/
 
       return n;
-      //return Game.Utils.clampRange(Math.floor(v), min, max);
+
     };
 
     /**
@@ -567,6 +562,7 @@ var Game = window.Game || {}; // Namespace
     };
 
     C.prototype.move = function(timeSinceLastFrame, pos, running) {
+
       if ( !this.swimming ) {
         if ( running && this.stats.stamina<=0 ) running = false;
       }
@@ -1174,7 +1170,7 @@ var Game = window.Game || {}; // Namespace
       engine.context.fillText(text.join(" "), 5, 5);
     }
 
-    engine.context.fillText("2D Tile Engine (c) Anders Evenrud", (canvasWidth - 190), 5);
+    engine.context.fillText("Runner - The Game", (canvasWidth - 120), 5);
 
     if ( debugDetail ) {
       engine.context.beginPath();
@@ -1275,4 +1271,3 @@ var Game = window.Game || {}; // Namespace
   };
 
 })();
-

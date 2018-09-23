@@ -62,7 +62,6 @@ var Game = window.Game || {}; // Namespace
       throw ("Cannot run: no UI found!");
     }
 
- 
     console.log("Engine::Engine()", "Initializing");
 
     origTitle      = document.title;
@@ -162,6 +161,7 @@ var Game = window.Game || {}; // Namespace
     }
 
     console.warn('Game.Engine', 'Shut down!');
+
   };
 
   /**
@@ -221,7 +221,7 @@ var Game = window.Game || {}; // Namespace
    * Get canvas (screen) width
    */
   Engine.prototype.getCanvasWidth = function() {
-    return canvasWidth;
+    return canvasWidth - 20;
   };
 
   /**
