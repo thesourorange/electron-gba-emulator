@@ -52,7 +52,7 @@ var Game = window.Game || {}; // Namespace
 
     Weapons : [
       {
-        name   : 'Pistol',
+        name   : 'Cannon',
         ammo   : 1000000,
         bullet : {
           w     : 4,
@@ -63,7 +63,7 @@ var Game = window.Game || {}; // Namespace
         }
       },
       {
-        name   : 'Rifle',
+        name   : 'Cannon',
         ammo   : 1000000,
         bullet : {
           w     : 3,

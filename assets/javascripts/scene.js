@@ -379,8 +379,8 @@ var Game = window.Game || {}; // Namespace
       bargs = bargs || {};
 
       // FIXME
-      src.x   = -(src.x + src.cx - map.viewRect.x) - map.xOffset;
-      src.y   = -(src.y + src.cy - map.viewRect.y) - map.yOffset;
+      src.x   = -(src.x - map.viewRect.x) - map.xOffset;
+      src.y   = -(src.y - map.viewRect.y) - map.yOffset;
 
       var rx = -(dst.x - (dst.w / 2) - map.viewRect.x);
       var ry = -(dst.y - (dst.h / 2) - map.viewRect.y);
@@ -444,6 +444,7 @@ var Game = window.Game || {}; // Namespace
       console.groupEnd();
 
       __index++;
+
     };
 
     C.prototype.destroy = function() {
@@ -900,6 +901,7 @@ var Game = window.Game || {}; // Namespace
             }
 
             self.sets[id]._context = context || null;
+
           })
         }
       }

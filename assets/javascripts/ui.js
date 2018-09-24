@@ -79,7 +79,7 @@ var Game = window.Game || {}; // Namespace
     engine.context.fillRect(boxX, boxY, boxV, boxH);
     engine.context.strokeRect(boxX, boxY, boxW, boxH);
     engine.context.fillStyle = "#aaa";
-    engine.context.fillText("Stamina", boxX + 7, boxY + 3);
+    engine.context.fillText("Fuel", boxX + 7, boxY + 3);
     engine.context.fillText(playerData.stamina + "%", boxX + 50, boxY + 3);
 
     //boxY += 20;
@@ -95,7 +95,7 @@ var Game = window.Game || {}; // Namespace
     engine.context.fillRect(boxX, boxY, boxV, boxH);
     engine.context.strokeRect(boxX, boxY, boxW, boxH);
     engine.context.fillStyle = "#aaa";
-    engine.context.fillText("Hunger", boxX + 7, boxY + 3);
+    engine.context.fillText("Damage", boxX + 7, boxY + 3);
     engine.context.fillText(playerData.hunger + "%", boxX + 48, boxY + 3);
 
     //boxY += 30;
@@ -107,9 +107,9 @@ var Game = window.Game || {}; // Namespace
     engine.context.strokeRect(boxX + (boxW / 2) + 5, boxY, (boxW / 2) - 5, 20);
 
     //boxY += 4;
-    engine.context.font = "9pt Arial";
+    engine.context.font = "8pt Arial";
     engine.context.fillStyle = "#000";
-    engine.context.fillText(playerData.weapon + " (" + playerData.ammo + " bullets)", boxX + 4, boxY + 3);
+    engine.context.fillText(playerData.weapon + " (" + playerData.ammo + " shells)", boxX + 4, boxY + 3);
     engine.context.fillText('None', boxX + (boxW / 2) + 9, boxY + 3);
 
     engine.context.globalAlpha = 1.0;
