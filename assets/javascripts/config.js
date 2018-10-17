@@ -12,6 +12,8 @@ var Game = window.Game || {}; // Namespace
     Player : {
       sx  : 19.666,
       sy  : 32,
+      sw  : 24,
+      sh  : 24,
       rot : 90
     },
 
@@ -27,7 +29,7 @@ var Game = window.Game || {}; // Namespace
         src       : 'assets/gfx/player.png',
         sx        : 32,
         sy        : 32,
-        ids       : ['idle'],
+         ids       : ['idle'],
         animations: {
           walk : {
             frames    : [0, 5],

@@ -417,6 +417,8 @@ var Game = window.Game || {}; // Namespace
       this.y        = (typeof params.y === 'undefined' || params.y === null) ? DEFAULT_PLAYER_Y : params.y;
       this.w        = Game.Config.Player.sx;
       this.h        = Game.Config.Player.sy;
+      this.width    = Game.Config.Player.sw;
+      this.height   = Game.Config.Player.sh;
       this.srot     = Game.Config.Player.rot;
       this.moving   = false;
       this.running  = false;
@@ -479,7 +481,8 @@ var Game = window.Game || {}; // Namespace
       } else {
         textureSet.drawTile(pc, 'player', 'idle', 0, 0, this.w, this.h);
       }
-      Game.Utils.drawImageRot(context, pv, r.x, r.y, this.w, this.h, Game.Utils.convertToDegree(this.r) - this.srot);
+ 
+      Game.Utils.drawImageRot(context, pv, r.x, r.y, this.width, this.height, Game.Utils.convertToDegree(this.r) - this.srot);
 
       if ( debugDetail ) {
         context.strokeStyle = "#0000ff";
