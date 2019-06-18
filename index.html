@@ -1,37 +1,24 @@
 <!DOCTYPE html>
-<!--
- @package Game
- @author Anders Evenrud <andersevenrud@gmail.com>
--->
 <html>
-  <head>
-  <meta name="charset" content="utf-8" />
-  <title>Survivor</title>
-  <style type="text/css">
-body {
-  margin : 0;
-  padding : 0;
-  background : #000;
-  color : #fff;
-  font-size : 12px;
-  overflow : hidden;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-}
-  </style>
-  <script type="text/javascript" src="assets/javascripts/noise.js"></script>
-  <script type="text/javascript" src="assets/javascripts/utils.js"></script>
-  <script type="text/javascript" src="assets/javascripts/input.js"></script>
-  <script type="text/javascript" src="assets/javascripts/audio.js"></script>
-  <script type="text/javascript" src="assets/javascripts/scene.js"></script>
-  <script type="text/javascript" src="assets/javascripts/engine.js"></script>
-  <script type="text/javascript" src="assets/javascripts/ui.js"></script>
-
-  <script type="text/javascript" src="assets/javascripts/config.js"></script>
-  <script type="text/javascript" src="assets/javascripts/engine.js"></script>
-  <script type="text/javascript" src="assets/javascripts/main.js"></script>
-</head>
-  <body>
-    <canvas id="canvas"></canvas>
-  </body>
+	<head>
+        <style type = "text/css">
+            body{
+                background: #000000;
+                padding: 0px;
+                margin: 0px;
+            }
+            canvas{
+                display:block;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+        <script src="node_modules/phaser/dist/phaser.min.js"></script>
+        <script src="assets/javascripts/game.js"></script>
+    </head>
+	<body>
+	</body>
 </html>

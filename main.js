@@ -16,10 +16,9 @@ const url = require('url')
 
 var mainWindow = null;
 
-
 function createWindow () {
 
-  mainWindow = new BrowserWindow({width: 1235, height: 720, resizable: false, autoHideMenuBar: true})
+  mainWindow = new BrowserWindow({width: 980, height: 580, resizable: false, autoHideMenuBar: true})
   mainWindow.setMenu(null);
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
