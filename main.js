@@ -2,6 +2,7 @@
 
 //handle setupevents as quickly as possible
 const setupEvents = require('./installers/setupEvents');
+const config = require('./config.json');
 
 if (setupEvents.handleSquirrelEvent()) {
    return;
@@ -20,6 +21,11 @@ function createWindow () {
 
   mainWindow = new BrowserWindow({width: 980, height: 580, resizable: false, autoHideMenuBar: true})
   mainWindow.setMenu(null);
+  
+  if (config.mode == "debug") {
+ //   mainWindow.webContents.openDevTools();
+ }
+ 
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
     protocol: 'file:',
